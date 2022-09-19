@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Access from '@components/Access'
 import Card from '@components/Card'
+import Header from '@components/Header'
 
 const item = {
     title: 'Coffee Mug - Card',
@@ -10,6 +11,8 @@ const item = {
         src: 'https://picsum.photos/200/300'
     }
 }
+
+const title = {title: 'rola'}
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +32,9 @@ const Home: NextPage = () => {
                 <Card.Pretitle />
             </Card>
         </Access>
+        <Header item={title}>
+            <Header.Title />
+        </Header>
 
         
       </main>
